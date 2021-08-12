@@ -20,7 +20,7 @@ function api_usuario_get($request) {
             "estado" => $user_meta['estado'][0],
         );
     } else {
-        $response = new WP_Error('permissao', 'Usuário não possui permissão', array('status' => 401));
+        $response = new WP_Error('permissao', 'Usuário não possui permissão.', array('status' => 401));
     }
 
     return rest_ensure_response($response);
