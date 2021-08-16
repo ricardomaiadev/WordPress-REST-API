@@ -39,7 +39,7 @@ function api_transacao_get($request) {
 
         $response[] = array(
             'comprador_id' => $post_meta['comprador_id'][0],
-            'vendedor' => $post_meta['vendedor_id'][0],
+            'vendedor_id' => $post_meta['vendedor_id'][0],
             'endereco' => json_decode($post_meta['endereco'][0]),
             'produto' => json_decode($post_meta['produto'][0]),
             'data' => $value->post_data,
